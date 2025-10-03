@@ -1,0 +1,4 @@
+package course
+
+class Teacher {
+}
