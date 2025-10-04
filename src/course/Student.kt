@@ -14,3 +14,5 @@ class Student(
         println("Major: $major")
     }
 }
+
+
