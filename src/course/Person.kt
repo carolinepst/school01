@@ -1,9 +1,6 @@
 package course
 
-class Person {
-    package course
-
-    open class Person(
+open class Person (
         var name: String,
         var address: String,
         var phoneNumber: String
@@ -14,5 +11,3 @@ class Person {
             println("Phone: $phoneNumber")
         }
     }
-
-}
