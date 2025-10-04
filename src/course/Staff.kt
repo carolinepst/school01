@@ -1,3 +1,5 @@
+package course
+
 class Staff(
     private var name: String,
     private var id: String,
