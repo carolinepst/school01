@@ -3,7 +3,6 @@ class Staff(
     private var id: String,
     private var position: String
 ) {
-    // Getter & Setter manual
     fun getName(): String = name
     fun setName(newName: String) { name = newName }
 
@@ -13,7 +12,13 @@ class Staff(
     fun getPosition(): String = position
     fun setPosition(newPosition: String) { position = newPosition }
 
-    // Fungsi tambahan
+    fun displayInfo() {
+        println("=== Staff Info ===")
+        println("ID       : $id")
+        println("Name     : $name")
+        println("Position : $position")
+    }
+    
     fun doWork() {
         println("Staff $name sedang bekerja sebagai $position")
     }
@@ -21,4 +26,11 @@ class Staff(
     fun report() {
         println("Staff $name melaporkan tugasnya.")
     }
+}
+
+fun main() {
+    val staff1 = Staff("Siti", "A001", "Cleaning Service")
+    staff1.displayInfo()
+    staff1.doWork()
+    staff1.report()
 }
