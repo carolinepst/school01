@@ -18,7 +18,7 @@ class StudentOrganisation (
         } else {
             println("Daftar Pengurus")
             leaders.forEach { leader ->
-                println("- ${leader.name} (ID: ${leader.studentid})")
+                println("- ${leader.name} (ID: ${leader.studentId})")
             }
         }
     }
